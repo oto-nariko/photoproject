@@ -127,3 +127,12 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+DEFAULT_FROM_EMAIL = 'fko2547055@gmail.com'  # メールの送信元のアドレスを入力
+EMAIL_HOST = 'smtp.gmail.com'            # GmailのSMPTサーバー　　　
+EMAIL_PORT = 587                         # SMPTサーバーのポート番号
+EMAIL_HOST_USER = 'fko2547055@gmail.com'     # Gmailのアドレスを入力
+EMAIL_HOST_PASSWORD = 'yqtf taoj rpbe grfd' # Gmailのアプリ用パスワードを入力
+EMAIL_USE_TLS = True # SMTP サーバと通信する際に TLS (セキュア) 接続を使う
