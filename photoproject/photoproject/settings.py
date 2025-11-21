@@ -136,3 +136,6 @@ EMAIL_PORT = 587                         # SMPTサーバーのポート番号
 EMAIL_HOST_USER = 'fko2547055@gmail.com'     # Gmailのアドレスを入力
 EMAIL_HOST_PASSWORD = 'yqtf taoj rpbe grfd' # Gmailのアプリ用パスワードを入力
 EMAIL_USE_TLS = True # SMTP サーバと通信する際に TLS (セキュア) 接続を使う
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
